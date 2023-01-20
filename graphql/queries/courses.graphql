@@ -1,0 +1,8 @@
+query GetCourses($cursor:String,$limit:Int) {
+  courses(data:{cursor:$cursor,limit:$limit}) {
+    hasMore
+    data {
+        ...CourseSnippet
+    }
+  }
+}

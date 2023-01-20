@@ -1,0 +1,13 @@
+fragment CourseSnippet on Course {
+    id
+    slug
+    title
+    textSnippet
+    thumbnail
+    createdAt
+    html
+    videoLink
+    user {
+        ...RegularUser
+    }
+}

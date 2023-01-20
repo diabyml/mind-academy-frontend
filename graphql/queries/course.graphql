@@ -1,0 +1,5 @@
+query Course($slug:String!) {
+  course(slug:$slug) {
+    ...CourseSnippet
+  }
+}

@@ -1,0 +1,10 @@
+mutation AddNewContactUsMessage($fullName:String!,$email:String!,$region:String!,$message:String!) {
+  addNewContactUsMessage(data:{fullName:$fullName,email:$email,region:$region,message:$message}) {
+    id
+    fullName
+    email
+    region
+    message
+    isRead
+  }
+}

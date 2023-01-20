@@ -1,0 +1,15 @@
+fragment PostSnippet on Post {
+  id
+  slug
+  title
+  likes
+  commentsCount
+  content
+  html
+  createdAt
+  updatedAt
+
+  user {
+    ...RegularUser
+  }
+}

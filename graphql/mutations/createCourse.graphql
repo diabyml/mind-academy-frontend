@@ -1,0 +1,5 @@
+mutation CreateCourse($title:String!,$summary:String!,$slug:String!,$html:String!,$thumbnail:String!,$videoLink:String!) {
+  createCourse(data:{title:$title,summary:$summary,slug:$slug,html:$html,thumbnail:$thumbnail,videoLink:$videoLink}){
+    ...CourseSnippet
+  }
+}

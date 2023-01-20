@@ -1,0 +1,5 @@
+mutation UpdatePost($slug: String!, $title: String, $content: String,$html: String) {
+  updatePost(data: { slug: $slug, title: $title, content: $content, html: $html }) {
+    ...PostSnippet
+  }
+}

@@ -1,0 +1,14 @@
+@use '../base/mixins' as *;
+@use '../base/breakpoints' as *;
+
+.rich-text-editor {
+    .toolbar {
+        box-shadow: var(--shadow-sm);
+        border: var(--border-width, 1px) var(--border-style, solid) alpha(var(--color-contrast-lower), var(--border-o, 1));
+    }
+    .editor {
+        background-color: var(--color-bg-dark);
+        min-height: 300px;
+        padding: var(--space-xs);
+    }
+}

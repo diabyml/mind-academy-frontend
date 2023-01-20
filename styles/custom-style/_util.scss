@@ -1,0 +1,59 @@
+@use '../base' as *;
+
+@use "../base/breakpoints" as *;
+
+// --------------------------------
+
+// How to create custom utility classes 👇
+
+// --------------------------------
+
+// 👇 your custom utility class
+// .my-util-class { 
+//   property: value;
+// }
+
+// 👇 (optional) create responsive variations - edit only [my-util-class, property, value]
+// @each $breakpoint, $value in $breakpoints { 
+//   @include breakpoint(#{$breakpoint}) {
+//     .my-util-class\@#{$breakpoint} {
+//       property: value;
+//     }
+//   }
+// }
+
+
+.debug {
+    outline: 1px solid red;
+}
+
+.flow > * + * {
+    margin-top: var(--flow-spacer,var(--space-xs));
+}
+
+.flow-vertical > * + * {
+    margin-left: var(--flow-spacer,var(--space-sm));
+}
+
+.gradient-primary {
+    background-image: linear-gradient(to top left,var(--color-primary-dark),var(--color-primary));
+}
+
+.app-layout {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+}
+
+@include breakpoint(sm) {
+    .mobile-only {
+        display:none;
+    }
+}
+
+@include mobilebreakpoint(sm) {
+    .desktop-only {
+        display:none;
+    }
+}
+

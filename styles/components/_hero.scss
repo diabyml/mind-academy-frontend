@@ -1,0 +1,24 @@
+@use '../base/breakpoints' as *;
+
+.hero__image-wrapper {
+    position: relative;
+}
+
+.hero__image-wrapper::after {
+    display: block;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    border-radius: 6rem;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    right: 40px;
+    background-color: var(--color-primary);
+}
+
+@include breakpoint(sm) {
+    .hero__image-wrapper::after {
+        bottom: 4px;
+    }
+}

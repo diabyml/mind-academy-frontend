@@ -1,0 +1,13 @@
+.footer {
+    ul > * + * {
+        margin-top: var(--space-xxs);
+
+    }
+    a {
+        color: var(--color-white);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+query PostComments($postId: Int!, $cursor: String, $limit: Int) {
+  postComments(data: { postId: $postId, cursor: $cursor, limit: $limit }) {
+    hasMore
+    data {
+      ...RegularComment
+    }
+  }
+}

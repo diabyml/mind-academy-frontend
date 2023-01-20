@@ -1,0 +1,97 @@
+
+@use '../base/breakpoints' as *;
+
+.site-header {
+    position:relative;
+    z-index: var(--z-index-header);
+    isolation: isolate;
+    .container {
+        padding-top: var(--space-sm);
+        padding-bottom:var(--space-sm);
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        flex-wrap: wrap;
+        position:relative;
+
+    }
+
+    .logo a {
+        color: var(--color-primary);
+        font-weight: var(--font-bold);
+        font-size: var(--text-md);
+    }
+}
+
+// mobile styles
+@include mobilebreakpoint(sm) {
+    .site-header {
+        .nav {
+            position: absolute;
+            z-index:900;
+            top:100%;
+            left:-20px;
+            right:-20px;
+            transform: translateY(-300%);
+            box-shadow: var(--shadow-sm);
+            padding: var(--space-sm) var(--space-md);
+            background-color: var(--color-primary);
+            color:var(--color-white);
+            // text-align:center;
+        }
+        .nav-list {
+            a {
+                color: inherit;
+                display:block;
+                padding-top: var(--space-sm);
+                padding-top: var(--space-sm);
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .open {
+            transform: translateY(0);
+        }
+    }
+}
+
+// desktop styles
+@include breakpoint(sm) {
+    .site-header {
+        .container {
+            display:flex;
+            align-items:center;
+        }
+
+        .right-section {
+            display: flex;
+            align-items: center;
+            .actions  {
+                display:flex;
+                align-items:center;
+                margin-left: var(--space-sm);
+                > * + * {
+                    margin-left: var(--space-sm);
+                }
+            }
+        }
+
+        .nav-list {
+            display: flex;
+            align-items: center;
+
+            > * + * {
+                margin-left: var(--space-sm);
+            }
+
+            a {
+                border-bottom: 2px solid transparent;
+                &:hover {
+                    color: var(--color-primary);
+                    border-bottom-color: var(--color-primary);
+                }
+            }
+        }
+    }
+}

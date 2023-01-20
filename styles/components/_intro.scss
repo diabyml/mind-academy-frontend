@@ -1,0 +1,25 @@
+.intro {
+
+    .intro__image-wrapper {
+        position:relative;
+        background-image: url(../../public/images/blob1.svg);
+        background-position:cover;
+        background-repeat: no-repeat;
+    
+        img {
+            margin-top: -24px !important;
+        }
+    }
+}
+
+// .intro__image-wrapper::after {
+//     content: url(../../public/images/blob1.svg);
+//     position: absolute;
+//     z-index: -1;
+//     top: 0;
+//     left: 0;
+//     bottom: -60px;
+//     right: 0;
+//     // background-color: var(--color-primary);
+// }
+

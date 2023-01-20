@@ -1,0 +1,3 @@
+Change:
+    text-base-size: the whole system will be affected
+    space-unit: affect the spacing system

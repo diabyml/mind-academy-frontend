@@ -1,0 +1,5 @@
+mutation UpdateCourse($title:String,$summary:String,$slug:String!,$html:String,$thumbnail:String,$videoLink:String) {
+  updateCourse(data:{slug:$slug,title:$title,summary:$summary,html:$html,thumbnail:$thumbnail,videoLink:$videoLink}) {
+    ...CourseSnippet
+  }
+}

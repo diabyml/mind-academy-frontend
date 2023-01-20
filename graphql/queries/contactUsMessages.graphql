@@ -1,0 +1,5 @@
+query ContactUsMessages($option:String!) {
+  contactUsMessages(option:$option){
+    ...ContactUsMessage
+  }
+}

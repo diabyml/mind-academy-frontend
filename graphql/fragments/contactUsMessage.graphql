@@ -1,0 +1,8 @@
+fragment ContactUsMessage on ContactUs {
+     id
+    fullName
+    email
+    region
+    message
+    isRead
+}

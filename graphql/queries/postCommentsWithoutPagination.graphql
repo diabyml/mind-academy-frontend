@@ -1,0 +1,11 @@
+query PostCommentsWithoutPagination($postId:String!) {
+  postCommentsWithoutPagination(postId:$postId) {
+    id
+      content
+      createdAt
+      user{
+        id
+        username
+      }
+  }
+}

@@ -1,0 +1,35 @@
+// don't modify this file -> edit 📁 custom-style/_spacing.scss to set your custom spacing scale
+
+:root {
+  --space-unit:  1rem;
+  // --space-unit-fixed:1rem;
+}
+
+:root, * {
+  --space-xxxxs: calc(0.125 * var(--space-unit)); 
+  --space-xxxs:  calc(0.25 * var(--space-unit));
+  --space-xxs:   calc(0.375 * var(--space-unit));
+  --space-xs:    calc(0.5 * var(--space-unit));
+  --space-sm:    calc(0.75 * var(--space-unit));
+  --space-md:    calc(1.25 * var(--space-unit));
+  --space-lg:    calc(2 * var(--space-unit));
+  --space-xl:    calc(3.25 * var(--space-unit));
+  --space-xxl:   calc(5.25 * var(--space-unit));
+  --space-xxxl:  calc(8.5 * var(--space-unit));
+  --space-xxxxl: calc(13.75 * var(--space-unit));
+  --component-padding: var(--space-md);
+  --flow-spacer: calc(var(--space-sm) * 1.3);
+
+  // --space-xxxxs-fixed: calc(0.125 * var(--space-unit-fixed)); 
+  // --space-xxxs-fixed:  calc(0.25 * var(--space-unit-fixed));
+  // --space-xxs-fixed:   calc(0.375 * var(--space-unit-fixed));
+  // --space-xs-fixed:    calc(0.5 * var(--space-unit-fixed));
+  // --space-sm-fixed:    calc(0.75 * var(--space-unit-fixed));
+  // --space-md-fixed:    calc(1.25 * var(--space-unit-fixed));
+  // --space-lg-fixed:    calc(2 * var(--space-unit-fixed));
+  // --space-xl-fixed:    calc(3.25 * var(--space-unit-fixed));
+  // --space-xxl-fixed:   calc(5.25 * var(--space-unit-fixed));
+  // --space-xxxl-fixed:  calc(8.5 * var(--space-unit-fixed));
+  // --space-xxxxl-fixed: calc(13.75 * var(--space-unit-fixed));
+  // --component-padding-fixed: var(--space-md-fixed);
+}
